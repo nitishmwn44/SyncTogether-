@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Together</title>
+    <link rel="icon" href="../assets/title_logo.png"  type = "image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link href="css/home_style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="./index.html"><img src="../assets/logo.png"  width="120" height="30"></a>
+        
+        <div class="dropdown sign-in cursor-pointer" >
+          <button class="dropbtn">profile_name
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a id="room-opt">My Rooms</a>
+            <a >Edit profile</a>
+            <a id="log-out-opt">log out</a>
+          </div>
+        </div>
+
+        <div class="sign-out cursor-pointer">
+          <a href="./sign_in.html">sign up</a>
+          <a href="./sign_in.html">sign in</a>
+        </div>
+
+      </div>
+    <section>
+        <div class="container">
+            <div class="heading-box">
+                <h2 data-text="watch movies in group...">watch movies in group</h2>
+            </div>
+            <a id="create-room" href="" >Create room</a>
+        </div>
+        <!-- room list container -->
+        <div class="room-container">
+          <ul class="room-ul">
+            <li class="room-ul-li" style="display: none;">
+              <span >Ankit's Room : Avengers</span>
+              <a class="room-ul-button cursor-pointer" style="background-color: rgb(48, 185, 48);">Watch</a>
+              <a class="room-ul-button cursor-pointer" style="background-color: rgb(250, 40, 40);">Delete</a>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <!-- dialog box to get room name -->
+    <div id="dialog-box">
+      <div class="dialog-box-content">
+        <span class="close cursor-pointer">&times;</span>
+        <form id="create-room-form">
+          <input type="text" placeholder="Room Name" autocomplete="off" required name="room_name">
+          <input class="cursor-pointer" type="submit" value="create">
+        </form>
+      </div>
+    </div>
+    
+    <script src="./home.js"></script>
+
+  </body>
+</html>
